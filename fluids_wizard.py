@@ -126,6 +126,26 @@ with st.sidebar:
         st.success(f"**CdA = {cda_result:.4f} in²**")
     
     st.caption("*Cv: gpm at 1 psi drop*")
+    
+    st.markdown("---")
+    
+    st.markdown("""
+    <a href="https://forms.gle/mL3rc7nyoQVkGxsn9" target="_blank">
+        <button style="
+            background-color: #ff4b4b;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            width: 100%;
+            font-weight: 600;
+            font-size: 0.9rem;
+        ">
+            🐛 Report a Bug
+        </button>
+    </a>
+    """, unsafe_allow_html=True)
 
 # Main tabs
 tab1, tab2, tab3, tab4, tab5 = st.tabs([
