@@ -2,26 +2,6 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 
-st.set_page_config(
-    page_title="Astro Fluids Wizard", 
-    page_icon="🚀", 
-    layout="wide",
-    initial_sidebar_state="expanded",
-    menu_items=None
-)
-
-# Force dark mode
-st.markdown("""
-<style>
-    [data-testid="stAppViewContainer"] {
-        background-color: #0e1117;
-    }
-    [data-testid="stHeader"] {
-        background-color: #0e1117;
-    }
-</style>
-""", unsafe_allow_html=True)
-
 # Fluid Properties Database
 FLUIDS = {
     "LOX (Liquid Oxygen)": {
